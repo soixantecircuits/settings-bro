@@ -1,0 +1,15 @@
+{
+  "name": "settings-bro",
+  "version": "1.0.0",
+  "description": "A tool to write settings on disk from spacebro",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Emmanuel Geoffray",
+  "license": "ISC",
+  "dependencies": {
+    "spacebro-client": "^0.4.5",
+    "standard-settings": "^1.1.10"
+  }
+}

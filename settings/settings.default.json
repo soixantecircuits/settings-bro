@@ -1,0 +1,28 @@
+{
+  "service": {
+    "spacebro":{
+      "host": "spacebro.space",
+      "port": 3333,
+      "channelName": "media-stream",
+      "client": {
+        "name": "settings-bro",
+        "description": "Receive settings from spacebro and write on disk",
+				"in": {
+					"writeSettings": {
+						"eventName": "writeSettings",
+						"description": "Input settings to write to disk",
+						"type": "all"
+					},
+					"getSettings": {
+						"eventName": "getSettings",
+						"description": "Ask settings from disk",
+						"type": "all"
+					}
+        }
+      }
+    }
+  },
+  "folder": {
+    "settings": "/opt/bin/settings"
+  }
+}
