@@ -13,6 +13,11 @@
 						"description": "Input settings to write to disk",
 						"type": "all"
 					},
+					"patchSettings": {
+						"eventName": "patchSettings",
+						"description": "Override settings with the new ones",
+						"type": "all"
+					},
 					"getSettings": {
 						"eventName": "getSettings",
 						"description": "Ask settings from disk",
