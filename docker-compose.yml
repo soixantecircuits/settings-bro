@@ -1,0 +1,7 @@
+version: "3"
+services:
+  settings_bro:
+      restart: always
+      build: .
+      volumes:
+        - ./settings:/app/settings
