@@ -1,7 +1,20 @@
-version: "3"
+#settings-bro
 services:
-  settings_bro:
-      restart: always
-      build: .
-      volumes:
-        - ./settings:/app/settings
+  settings-bro:
+    #image: settings-bro:latest
+    build: .
+    container_name: settings-bro
+    hostname: settings-bro
+    restart: unless-stopped
+    environment:
+      TZ: Europe/Paris
+    volumes:
+      - ./settings:/app/settings:ro
+    networks:
+      - spacebro
+      - default
+
+networks:
+  default:
+  spacebro:
+    external: true
